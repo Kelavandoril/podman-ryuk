@@ -1,4 +1,4 @@
-module github.com/testcontainers/moby-ryuk
+module github.com/kelavandoril/podman-ryuk
 
 go 1.23.9
 

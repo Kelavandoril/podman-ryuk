@@ -6,5 +6,7 @@ testresources/
 .golangci.yml
 Dockerfile
 **/Dockerfile
+Containerfile
+**/Containerfile
 main_test.go
 README.md
