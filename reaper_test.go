@@ -860,7 +860,8 @@ func TestReapImage(t *testing.T) {
 			BuildArgs: map[string]*string{
 				"arg1": &arg1,
 			},
-			Labels: labels,
+			Labels:     labels,
+			Dockerfile: "Containerfile",
 		})
 		require.NoError(t, err)
 		t.Cleanup(func() {
