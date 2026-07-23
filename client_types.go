@@ -13,6 +13,7 @@ import (
 	"github.com/docker/docker/api/types/registry"
 	"github.com/docker/docker/api/types/swarm"
 	"github.com/docker/docker/api/types/volume"
+	"github.com/docker/docker/client"
 	"github.com/opencontainers/image-spec/specs-go/v1"
 )
 
@@ -79,22 +80,22 @@ func (p PodmanImageClient) ImagesPrune(ctx context.Context, pruneFilter filters.
 	panic("implement me")
 }
 
-func (p PodmanImageClient) ImageInspect(ctx context.Context, image string, _ ...ImageInspectOption) (image.InspectResponse, error) {
+func (p PodmanImageClient) ImageInspect(ctx context.Context, image string, _ ...client.ImageInspectOption) (image.InspectResponse, error) {
 	//TODO implement me
 	panic("implement me")
 }
 
-func (p PodmanImageClient) ImageHistory(ctx context.Context, image string, _ ...ImageHistoryOption) ([]image.HistoryResponseItem, error) {
+func (p PodmanImageClient) ImageHistory(ctx context.Context, image string, _ ...client.ImageHistoryOption) ([]image.HistoryResponseItem, error) {
 	//TODO implement me
 	panic("implement me")
 }
 
-func (p PodmanImageClient) ImageLoad(ctx context.Context, input io.Reader, _ ...ImageLoadOption) (image.LoadResponse, error) {
+func (p PodmanImageClient) ImageLoad(ctx context.Context, input io.Reader, _ ...client.ImageLoadOption) (image.LoadResponse, error) {
 	//TODO implement me
 	panic("implement me")
 }
 
-func (p PodmanImageClient) ImageSave(ctx context.Context, images []string, _ ...ImageSaveOption) (io.ReadCloser, error) {
+func (p PodmanImageClient) ImageSave(ctx context.Context, images []string, _ ...client.ImageSaveOption) (io.ReadCloser, error) {
 	//TODO implement me
 	panic("implement me")
 }
